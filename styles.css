@@ -13,6 +13,7 @@ header {
     color: black;
     display: flex;
     height: 15vh;
+    min-height: 4em;
     position: relative;
     justify-content: center;
 }
@@ -106,7 +107,7 @@ footer {
 
 .content img {
     max-height: 100%;
-    width: 100%;
+    min-width: 100%;
 }
 
 .bottom-left {
