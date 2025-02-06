@@ -12,7 +12,7 @@ header {
     background: #fff;
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
     position: relative;
 }
 
@@ -96,17 +96,32 @@ footer {
     }
 }
 
-.content img {
-    max-width: 60%;
-    height: auto;
-    max-height: 60%;
-    display: block;
-    margin: 0 auto;
+.cover {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .content img {
-        max-width: 80%;
-    }
+.content img {
+    max-height: 100%;
+    width: 100%;
+}
+
+.bottom-left {
+    width: 100%;
+    z-index: 100;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-left-content {
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
 }
