@@ -15,6 +15,7 @@ header {
     height: 15vh;
     min-height: 4em;
     position: relative;
+    align-items: center;
     justify-content: center;
 }
 
