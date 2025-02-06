@@ -11,9 +11,10 @@ body {
 header {
     background: #fff;
     color: black;
-    text-align: center;
-    padding: 1px;
+    display: flex;
+    height: 15vh;
     position: relative;
+    justify-content: center;
 }
 
 .social-icons {
