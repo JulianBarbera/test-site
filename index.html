@@ -11,6 +11,9 @@
 
 <body>
     <header>
+        <div class="mari">
+            <img src="content/Mari.gif" alt="Mari">
+        </div>
         <h1>Slug Anime and Manga Association</h1>
         <div class="social-icons">
             <a href="discord" target="_blank"><img src="content/discord.svg" alt="Discord"></a>
@@ -19,7 +22,33 @@
     </header>
     <div class="content">
         <div class="cover">
-            <img src="content/untitled.jpg" alt="Image :)">
+            <div class="carousel-container">
+                <div class="carousel" id="carousel"></div>
+            </div>
+            <script>
+                const imageFolder = "carousel/";  // Folder where images are stored
+                const imageFiles = ["image1.jpg", "image2.png", "image3.png"]; // List of images
+                const carousel = document.getElementById("carousel");
+
+                // Create image elements and append to carousel
+                imageFiles.forEach((image, index) => {
+                    let img = document.createElement("img");
+                    img.src = imageFolder + image;
+                    if (index === 0) img.classList.add("active"); // First image visible
+                    carousel.appendChild(img);
+                });
+
+                let currentIndex = 0;
+                const images = document.querySelectorAll(".carousel img");
+
+                function nextImage() {
+                    images[currentIndex].classList.remove("active"); // Hide current image
+                    currentIndex = (currentIndex + 1) % images.length; // Move to next image
+                    images[currentIndex].classList.add("active"); // Show next image
+                }
+
+                setInterval(nextImage, 7000); // Change image every 3 seconds
+            </script>
             <div class="bottom-left">
                 <div class="bottom-left-content">
                     <p>The Slug Anime and Manga Association (SAMA) at UC Santa Cruz is a community of anime and manga
