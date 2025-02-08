@@ -91,28 +91,33 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .content {
-        padding: 10px;
+    header {
+        grid-template-columns: 1fr auto;
+        text-align: center;
+    }
+
+    .mari {
+        height: 3em;
     }
 
     h1 {
-        font-size: 2.5em;
-    }
-
-    .discord-link {
-        font-size: 1.2em;
-        padding: 10px 20px;
+        font-size: 2em;
+        text-align: center;
     }
 
     .social-icons {
+        position: absolute;
         top: 5px;
         right: 5px;
+        display: flex;
+        gap: 5px;
     }
 
     .social-icons img {
-        width: 30px;
+        width: 25px;
     }
 }
+
 
 .cover {
     height: 80vh;
