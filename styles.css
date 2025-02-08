@@ -82,12 +82,36 @@ iframe {
     border: none;
 }
 
+
 footer {
-    background: #fff;
-    color: black;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    margin-top: 40px;
+    background-color: #fff;
+}
+
+footer div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer img {
+    height: 69px;
+    width: auto;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 @media (max-width: 768px) {
